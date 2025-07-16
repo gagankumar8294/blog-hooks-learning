@@ -12,6 +12,8 @@ export default function Blog(){
     function handleSubmit(e){
         e.preventDefault();
         setBlogs([{title, content},...blogs]);
+        setTitle("");
+        setContent("");
         console.log(blogs)
     }
 
